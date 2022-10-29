@@ -1,0 +1,187 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:leather_boots"},
+        "title": {"translate":"World Boarder"},
+        "description": {"translate":"World Boarder fix by DrTrog"},
+        "frame": "task",
+	"show_toast": false,
+	"announce_to_chat": false,
+	"hidden": true
+    },
+    "parent": "skyblock:skyblock/root",
+    "rewards": { "function": "skyblock:world_border" },		
+    "criteria": {
+        "+x_pos_limit_overworld": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "position": {
+                            "x": {
+                              "min": 1000
+                            },
+                            "dimension": "minecraft:overworld"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            }
+          },
+          "-x_pos_limit_overworld": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "position": {
+                            "x": {
+                              "max": -1000
+                            },
+                            "dimension": "minecraft:overworld"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            }
+          },
+          "-z_pos_limit_overworld": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "position": {
+                            "z": {
+                              "max": -1000
+                            },
+                            "dimension": "minecraft:overworld"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            }
+          },
+          "+z_pos_limit_overworld": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "position": {
+                            "z": {
+                              "min": 1000
+                            },
+                            "dimension": "minecraft:overworld"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            }
+          },
+          "+x_pos_limit_nether": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "position": {
+                            "x": {
+                              "min": 1000
+                            },
+                            "dimension": "minecraft:nether"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            }
+          },
+          "-x_pos_limit_nether": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "position": {
+                            "x": {
+                              "max": -1000
+                            },
+                            "dimension": "minecraft:nether"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            }
+          },
+          "-z_pos_limit_nether": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "position": {
+                            "z": {
+                              "max": -1000
+                            },
+                            "dimension": "minecraft:nether"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            }
+          },
+          "+z_pos_limit_nether": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "position": {
+                            "z": {
+                              "min": 1000
+                            },
+                            "dimension": "minecraft:nether"
+                          }
+                        }
+                      }
+                    }
+                  ]
+            }
+          }
+    },
+    "requirements": [
+        ["+x_pos_limit_overworld","-x_pos_limit_overworld","+z_pos_limit_overworld","-z_pos_limit_overworld","+x_pos_limit_nether","-x_pos_limit_nether","+z_pos_limit_nether","-z_pos_limit_nether"]
+    ]
+}

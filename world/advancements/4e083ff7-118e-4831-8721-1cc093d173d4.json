@@ -1,0 +1,21 @@
+{
+  "skyblock:skyblock": {
+    "criteria": {
+      "trigger": "2022-06-07 22:36:28 -0500"
+    },
+    "done": true
+  },
+  "global:root": {
+    "criteria": {
+      "trigger": "2022-06-07 22:36:28 -0500"
+    },
+    "done": true
+  },
+  "global:drtrog": {
+    "criteria": {
+      "trigger": "2022-06-07 22:36:28 -0500"
+    },
+    "done": true
+  },
+  "DataVersion": 3105
+}

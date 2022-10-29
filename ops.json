@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "uuid": "452bc161-db27-3159-a854-f2a73145f581",
+    "name": "werain",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "2758672f-4e2e-390b-8cec-d88a64c7082b",
+    "name": "Acnologia2317",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "3a82c0cb-a74f-3dc9-a895-2358855d8508",
+    "name": "Acnologia",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
